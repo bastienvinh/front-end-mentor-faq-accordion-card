@@ -1,0 +1,33 @@
+.card {
+  background-color: white;
+  width: 92rem;
+  height: 51rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 30px;
+
+
+  .illustration-image-box {
+    position: absolute;
+    left: -135px;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 95%;
+    height: 80%;
+
+    flex-direction: column;
+  }
+
+  .illustration-image-box {
+    display: none;
+  }
+}
